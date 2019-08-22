@@ -6,36 +6,45 @@
   </head>
   <body>
    <script type="text/javascript">
+    let lastName;
+    let firstName;
+    let middleName;
+    let age;
+    let gender;
+    let ageDays;
+    let ageIn5Years;
+    let genderAlert;
+    let retirementStatus; 
+        
     while(true) { 
-      var lastName = prompt('What is your last name?', '');    
+      lastName = prompt('What is your last name?', '');    
         if(!isNaN(lastName) || !lastName)
           alert('Really?\nPut the CORRECT last name.') 
           else break;
     }
     while(true){
-      var firstName = prompt('What is your first name?', '');
+      firstName = prompt('What is your first name?', '');
         if(!isNaN(firstName) || !firstName)
           alert('Man!\nI don\'t have all day to play with you.\nWhat\'s your first name?')
           else break;    
     }
     while(true){
-      var middleName = prompt('What is your middle name?', '');
+      middleName = prompt('What is your middle name?', '');
          if(!isNaN(middleName) || !middleName)
            alert('Again? Dude this form ain\'t going anywhere until you fill it up CORRECTLY.' )     
            else break;
     }
     while(true) {
-      var age = prompt('What is your age?', '')
-          if(isNaN(age) || (age <= 0) || (age > 100))
-            alert('Hint hint hint. Age is usually represened by NUMBER.')
-            else break;
+      age = prompt('What is your age?', '')
+        if(isNaN(age) || (age <= 0) || (age > 100))
+          alert('Hint hint hint. Age is usually represened by NUMBER.')
+          else break;
     }
 
-    var gender = confirm('Press OK if you\'re a male. If female press Cancel.', '');
-    var ageDays = parseFloat(age) * 365;
-    var ageIn5Years = parseFloat(age) + 5;
-    var genderAlert;
-    var retirementStatus; 
+    gender = confirm('Press OK if you\'re a male. If female press Cancel.', '');
+    ageDays = parseFloat(age) * 365;
+    ageIn5Years = parseFloat(age) + 5;
+     
 
     if(gender){
         genderAlert = 'male';
