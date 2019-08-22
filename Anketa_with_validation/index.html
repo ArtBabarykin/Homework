@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Anketa</title>  
+    <meta charset="utf-8">  
+  </head>
+  <body>
+   <script type="text/javascript">
+    while(true) { 
+      var lastName = prompt('What is your last name?', '');    
+        if(!isNaN(lastName) || !lastName)
+          alert('Really?\nPut the CORRECT last name.') 
+          else break;
+    }
+    while(true){
+      var firstName = prompt('What is your first name?', '');
+        if(!isNaN(firstName) || !firstName)
+          alert('Man!\nI don\'t have all day to play with you.\nWhat\'s your first name?')
+          else break;    
+    }
+    while(true){
+      var middleName = prompt('What is your middle name?', '');
+         if(!isNaN(middleName) || !middleName)
+           alert('Again? Dude this form ain\'t going anywhere until you fill it up CORRECTLY.' )     
+           else break;
+    }
+    while(true) {
+      var age = prompt('What is your age?', '')
+          if(isNaN(age) || (age <= 0) || (age > 100))
+            alert('Hint hint hint. Age is usually represened by NUMBER.')
+            else break;
+    }
+
+    var gender = confirm('Press OK if you\'re a male. If female press Cancel.', '');
+    var ageDays = parseFloat(age) * 365;
+    var ageIn5Years = parseFloat(age) + 5;
+    var genderAlert;
+    var retirementStatus; 
+
+    if(gender){
+        genderAlert = 'male';
+    } else {
+        genderAlert = 'female';
+    }
+
+    if(age > 62){
+      retirementStatus = 'yes'
+    } else if 
+      (!gender && age > 57){
+      retirementStatus = 'yes'      
+    } else {
+        retirementStatus = 'no';
+    }
+
+    alert('FIO: ' + lastName + ' ' + firstName + ' ' + middleName + '\n' + 'age, years: ' + age + '\n' +
+    'age, days: ' + ageDays + '\n' +
+    'in 5 years you\'ll be: ' + ageIn5Years + '\n' +      
+    'gender: ' + genderAlert + '\n' +
+    'retiree: ' +  retirementStatus);
+
+
+</script>    
+  </body>
+</html>
