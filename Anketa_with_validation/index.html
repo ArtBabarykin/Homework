@@ -36,15 +36,16 @@
            else break;
     }
     while(true) {
-      age = prompt('What is your age?', '')
+      age = prompt('What is your age?', '');
+      age = parseFloat(age);
         if(isNaN(age) || (age <= 0) || (age > 100))
           alert('Hint hint hint. Age is represened by NUMBER. Usually below 100.')
           else break;
     }
 
     gender = confirm('Press OK if you\'re a male. If female press Cancel.', '');
-    ageDays = parseFloat(age) * 365;
-    ageIn5Years = parseFloat(age) + 5;
+    ageDays = age * 365;
+    ageIn5Years = age + 5;
      
 
     if(gender){
