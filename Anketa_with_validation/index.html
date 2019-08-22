@@ -6,6 +6,7 @@
   </head>
   <body>
    <script type="text/javascript">
+    'use strict'
     let lastName;
     let firstName;
     let middleName;
@@ -37,7 +38,7 @@
     while(true) {
       age = prompt('What is your age?', '')
         if(isNaN(age) || (age <= 0) || (age > 100))
-          alert('Hint hint hint. Age is usually represened by NUMBER.')
+          alert('Hint hint hint. Age is represened by NUMBER. Usually below 100.')
           else break;
     }
 
