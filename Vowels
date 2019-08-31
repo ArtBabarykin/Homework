@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Vowels</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            
+           let str = prompt('type something here')
+           
+           function countVowels(str){
+
+             let vowelsEn = 'eyuioaEYUIOA'
+             let counter = 0;
+
+             for(var i = 0; i < str.length; i++){
+                 if(vowelsEn.indexOf(str[i]) !== -1){
+                    
+                     counter += 1
+                 }
+             }
+               return counter;
+           }
+            console.log(countVowels(str))
+            
+        </script>
+    </body>
+</html>
